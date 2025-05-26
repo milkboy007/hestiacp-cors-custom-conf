@@ -6,7 +6,7 @@ Here is here is my solution (my config files).
 
 Don't forget to change your required config parameters
 
-### Using Default Template for nginx proxy with preflight CORS
+### CORS Using Default Template for nginx proxy
 
 Solution found by reading the hestiacp forum.
 If this didn't help you, go and ask in the hestiacp forum.
