@@ -1,1 +1,28 @@
-# HestiaCP Custom Conf
+# Hestia Custom Conf For CORS
+
+Having problems with CORS on Hestia server?
+
+Here is here is my solution (my config files).
+
+Don't forget to change your required config parameters
+
+### Using Default Template for nginx proxy with preflight CORS
+
+Solutions found by sleuthing on hestiacp forum.
+If this didn't help you. ask in the forum.
+
+> 1. Copy `nginx.conf_header` & `nginx.ssl.conf_header` files inside folder `home-user-conf-web-domain` to `/home/YOURUSER/conf/web/DOMAINS/`
+> 2. Test nginx conf using: `nginx -t`
+> 3. If no problems, reload/restart nginx, using hestiacp webui or server cli `nginx -s reload`/`systemctl reload nginx`
+
+### Custom Nginx Template for nginx proxy with preflight CORS
+
+I had troubles with preflight CORS. and didn't find it in any solutions in the forums.
+So this is my solution after trail and errors.
+
+> 1. Copy `default-with-cors.tpl` & `default-with-cors.stpl` files inside folder `usr-local-hestia-data-templates-web-nginx` to `/usr/local/hestia/data/templates/web/nginx/`
+> 2. Copy all files inside folder `home-user-conf-web-domain` to `/home/YOURUSER/conf/web/DOMAINS/
+> 3. Test nginx conf using: `nginx -t`
+> 4. If no problems, reload/restart nginx, using hestiacp webui or server cli `nginx -s reload`/`systemctl reload nginx`
+
+References for custom template:

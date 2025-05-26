@@ -1,4 +1,4 @@
-### CORS
+### CORS use with default.tpl/default.stpl
                 add_header 'Cache-Control' 'public';
                 add_header 'X-Frame-Options' 'ALLOW-FROM *';
                 add_header 'Access-Control-Allow-Origin' '*';
