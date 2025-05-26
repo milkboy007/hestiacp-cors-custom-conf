@@ -21,7 +21,7 @@ Why this solution?
 
 I'm using laravel. I had troubles with CORS preflight and CORS images outside the root folder (root folder point to laravelapp/public/ & image is in laravelapp/storage/).
 
-I didn't find it in any solutions in the forums, so this is my solution after trials and errors.
+I didn't find it in any solutions in the forums, so this is my solution after trials and errors. You can use check what I changed by comparing it to the .reference files
 
 1. Copy `default-with-cors.tpl` & `default-with-cors.stpl` files inside folder `usr-local-hestia-data-templates-web-nginx` to `/usr/local/hestia/data/templates/web/nginx/`
 2. Copy all files inside folder `home-user-conf-web-domain` to `/home/YOURUSER/conf/web/DOMAINS/
