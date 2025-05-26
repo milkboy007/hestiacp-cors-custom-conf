@@ -1,4 +1,4 @@
-### CORS Preflight default-with-cors.tpl/default-with-cors.stpl
+### CORS use with default-with-cors.tpl/default-with-cors.stpl
                 add_header 'Cache-Control' 'public';
                 add_header 'X-Frame-Options' 'ALLOW-FROM *';
                 add_header 'Access-Control-Allow-Origin' '*';

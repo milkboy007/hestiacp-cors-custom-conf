@@ -1,4 +1,4 @@
-### CORS Preflight default-with-cors.tpl/default-with-cors.stpl
+### CORS Preflight use with default-with-cors.tpl/default-with-cors.stpl
                 if ($request_method = 'OPTIONS') {
                 add_header 'Access-Control-Max-Age' '1728000';
                 add_header 'Access-Control-Allow-Origin' '*';
