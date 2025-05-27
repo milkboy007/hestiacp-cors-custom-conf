@@ -1,6 +1,6 @@
 # HestiaCP Custom Conf For CORS
 
-Having problems with CORS on Hestia server?
+Having problems with CORS on HestiaCP server?
 
 Here is here is my solution (my config files).
 
