@@ -1,4 +1,4 @@
-# Hestia Custom Conf For CORS
+# HestiaCP Custom Conf For CORS
 
 Having problems with CORS on Hestia server?
 
