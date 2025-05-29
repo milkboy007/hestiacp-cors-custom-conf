@@ -21,11 +21,13 @@ Why this solution?
 
 I'm using laravel. I had troubles with CORS preflight and CORS images outside the root folder (root folder point to laravelapp/public/ & image is in laravelapp/storage/).
 
-I didn't find it in any solutions in the forums, so this is my solution after trials and errors. You can use check what I changed by comparing it to the .reference files
+I didn't find it in any solutions in the forums, so this is my solution after trials and errors. You can check what I changed by comparing it to the .reference files
 
 1. Copy `default-with-cors.tpl` & `default-with-cors.stpl` files inside folder `usr-local-hestia-data-templates-web-nginx` to `/usr/local/hestia/data/templates/web/nginx/`
-2. Copy all files inside folder `home-user-conf-web-domain` to `/home/YOURUSER/conf/web/DOMAINS/
-3. Test nginx conf using: `nginx -t`
-4. If no problems, reload/restart nginx, using hestiacp webui or server cli `nginx -s reload`/`systemctl reload nginx`
+2. Copy all files inside folder `home-user-conf-weib-domain` to `/home/YOURUSER/conf/web/DOMAINS/
+3. Change the proxy template to `default-with-cors`, using HestiaCP webui or CLI `v-change-user-template`
+4. Rebuilt web domain using HestiaCP webui or CLI `v-rebuild-web-domain `
+5. Test nginx conf using: `nginx -t`
+6. If no problems, reload/restart nginx, using hestiacp webui or server cli `nginx -s reload`/`systemctl reload nginx`
 
 Documentations for custom template: [https://hestiacp.com/docs/server-administration/web-templates](https://hestiacp.com/docs/server-administration/web-templates)
